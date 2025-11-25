@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar{
+        height: 100px;
+        background-color: rgb(136, 80, 189);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .navbar a{
+        color: azure;
+        text-decoration: none;
+    }
+    .navbar a:hover{
+        text-decoration: underline;
+        color: bisque;
+    }
+    .floating_button{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    .cards{
+        display: flex;
+    }
+    .card{
+        height: 300px;
+        width: 200px;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 10px;
+        border-radius: 10px;
+    }
+    .card:nth-child(2){
+        background-color: antiquewhite;
+    }
+    .card:nth-child(3){
+        background-color: burlywood;
+    }
+    .badge{
+        position: absolute;
+    }
+
+    .popup{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        height: 300px;
+        width: 500px;
+        background-color: azure;
+        border: 2px solid black;
+        left: 650px;
+        top: 300px;
+    }
+    .scroll{
+        height: 300px;
+        width: 250px;
+        overflow-y: auto;
+        overflow: hidden scroll;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">INFORMATION</a>
+        <a href="">POLICY</a>
+    </div>
+    <div class="hero_section">
+        <img src="images.jpg" alt="">
+        <p>shulundu</p>
+    </div>
+    <div class="floating_button">
+        <button onclick="press()">Press here!!!</button>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <p class="badge">NEW</p>
+        </div>
+        <div class="card">
+            <p class="badge">NEW</p>
+        </div>
+        <div class="card">
+            <p class="badge">NEW</p>
+        </div>
+
+    </div>
+    <div id="popup" class="popup">
+        <img src="suiciedboys.webp" alt="">
+    </div>
+    <div class="scroll">
+        <p>text0</p>
+        <p>text1</p>
+        <p>text2</p>
+        <p>text3</p>
+        <p>text4</p>
+        <p>text5</p>
+        <p>text6</p>
+        <p>text7</p>
+        <p>text8</p>
+        <p>text9</p>
+        <p>text10</p>
+        <p>text11</p>
+        <p>text12</p>
+        <p>text13</p>
+        <p>text14</p>
+    </div>
+</body>
+<script>
+    function press() {
+        document.getElementById('popup').style.display='flex';
+    }
+</script>
+</html>
