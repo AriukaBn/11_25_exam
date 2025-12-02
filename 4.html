@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header{
+        background-color: rgb(27, 60, 83);
+        display: flex;
+        width: 100vw;
+    }
+    .asd{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80vw;
+    }
+    .asd a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    .asd a:hover{
+        color: rgb(175, 175, 175);
+    }
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #ffffff;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .product-grid{
+        background-color: rgb(227, 227, 227);
+        width: 100vw;
+        color: black;
+    }
+    .product-grid input{
+        margin-left: 10px;
+    }
+    .pagination{
+        background-color: rgb(227, 227, 227);
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pagination a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+    }
+    .pagination a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+    .pagination a:hover:not(.active) {background-color: #ddd;}
+    .cards{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: rgb(227, 227, 227);
+    }
+    .card{
+        height: 350px;
+        width: 200px;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card img{
+        height: 150px;
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="profile-picture-container">
+            <img src="../suiciedboys.webp" alt="Profile Picture" class="profile-picture">
+        </div>
+        <div class="asd">
+            <a href="Home">Home</a>
+            <a href="Prod">Products</a>
+            <a href="About">About</a>
+            <a href="Contact">Contact</a>
+        </div>
+    </div>
+    <div class="product-grid">
+        <input type="checkbox" name="all" id="all">
+        <label>All</label>
+        
+        <input type="checkbox" name="all" id="all">
+        <label>Sort by average rating</label>
+        
+        <input type="checkbox" name="all" id="all">
+        <label>Sort by latest</label>
+        
+        <input type="checkbox" name="all" id="all">
+        <label>Sort by price: low to high</label>
+        
+        <input type="checkbox" name="all" id="all">
+        <label>Sort by price: high to low</label>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="../THY KINGDOM COME.png" alt="">
+            <h2>Title</h2>
+            <p>Description</p>
+            <p>????$</p>
+            <button>Add to cart</button>
+        </div>
+    </div>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#">1</a>
+      <a class="active" href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+    </div>
+</body>
+</html>
